@@ -315,7 +315,9 @@ The cipher can, be adapted to an alphabet with any number of letters. All arithm
 
 ## PROGRAM:
 PROGRAM:
-#include <stdio.h> #include <string.h>
+```c
+#include <stdio.h>
+#include <string.h>
 int keymat[3][3] = { { 1, 2, 1 }, { 2, 3, 2 }, { 2, 2, 1 } };
 int invkeymat[3][3] = { { -1, 0, 1 }, { 2, -1, 0 }, { -2, 2, -1 } }; char key[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char encode(char a, char b, char c) { char ret[4];
@@ -359,7 +361,7 @@ strcat(dec, decode(a, b, c));
 }
 printf("Decoded message : %s\n", dec); return 0;
 }
-
+```
 
 ## OUTPUT:
 OUTPUT:
